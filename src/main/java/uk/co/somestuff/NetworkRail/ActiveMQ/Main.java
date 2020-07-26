@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         if (args.length < 4) {
-            System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Please specify SOP Table, Signaling Area, Topic, Username and Password in the form: Main.jar ./sopTable.json BP TD_ALL_SIG_AREA example@email.com password");
+            System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Please specify SOP Table, Signaling Area, Topic, Username and Password in the form: Main.jar BP TD_ALL_SIG_AREA example@email.com password ./sopTable.json");
             System.exit(0);
         }
 
