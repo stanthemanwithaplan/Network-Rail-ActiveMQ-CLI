@@ -1,5 +1,12 @@
 # Network Rail TD in Java
 A Java written Network Rail data feed train describer interpreter
+
+Capability:
+- Select a signal area
+- Display signal changes
+- Display train movments
+- Interperate SOP data
+
 # Usage
 With a SOP table the program will interpret the data and display the signals
 ```
