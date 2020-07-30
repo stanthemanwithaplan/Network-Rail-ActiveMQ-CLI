@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>uk.co.somestuff</groupId>
-    <artifactId>NetworkRail</artifactId>
+    <artifactId>NetworkRail-CLI</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
@@ -26,7 +26,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>uk.co.somestuff.NetworkRail.TD.MyClient</mainClass>
+                            <mainClass>uk.co.somestuff.NetworkRail.ActiveMQ.MyClient</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -39,5 +39,20 @@
             </resource>
         </resources>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20190722</version>
+        </dependency>
+        <dependency>
+            <groupId>net.ser1</groupId>
+            <artifactId>stomp</artifactId>
+            <version>1.2</version>
+            <scope>system</scope>
+            <systemPath>/Users/stan/Documents/Code/Java Packages/gozirra-0.4.1.jar</systemPath>
+        </dependency>
+    </dependencies>
 
 </project>
