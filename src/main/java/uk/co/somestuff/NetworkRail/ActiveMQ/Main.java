@@ -17,6 +17,7 @@ public class Main {
 
         if (args.length < 4) {
             System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Please specify SOP Table, Signaling Area, Topic, Username and Password in the form: Main.jar BP TD_ALL_SIG_AREA example@email.com password ./sopTable.json");
+            System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] To create a Network Rail Data Feed account please visit https://datafeeds.networkrail.co.uk/ntrod/login");
             System.exit(0);
         }
 

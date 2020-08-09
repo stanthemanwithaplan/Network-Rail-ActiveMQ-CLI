@@ -22,18 +22,18 @@ public class MyClient {
     private static final int PORT = 61618;
 
     public void connect (String USERNAME, String PASSWORD, String TOPIC) throws Exception {
-        System.out.println("| Connecting...");
+        System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Connecting...");
         Client client = new Client(SERVER, PORT, USERNAME, PASSWORD);
         if (client.isConnected()) {
-            System.out.println("| Connected to " + SERVER + ":" + PORT);
+            System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Connected to " + SERVER + ":" + PORT);
         } else {
-            System.out.println("| Could not connect");
+            System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Could not connect");
             return;
         }
-        System.out.println("| Subscribing...");
+        System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Subscribing...");
         Listener listener = new MyListener();
         client.subscribe("/topic/" + TOPIC , listener);
-        System.out.println("| Subscribed to " + TOPIC);
-        System.out.println("| Waiting for message...");
+        System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Subscribed to " + TOPIC);
+        System.out.println("[uk.co.somestuff.NetworkRail.ActiveMQ] Waiting for message...");
     }
 }
